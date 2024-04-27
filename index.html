@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Threads & Hues</title>
     <style>
-        body {
+                body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -114,7 +114,48 @@
             font-weight: bold;
         }
     </style>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Threads & Hues</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="product-grid">
+            <div id="product-container"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; Threads & Hues 2024</p>
+            <form>
+                <h3>Stay Updated</h3>
+                <p>Sign up for our newsletter to receive exclusive offers and new arrivals.</p>
+                <input type="email" placeholder="Enter your email address">
+                <button type="submit">Subscribe</button>
+            </form>
+            <ul>
+                <li><h3>About Us</h3></li>
+                <li><h3>Contact Us</h3></li>
+                <li><h3>Help</h3></li>
+            </ul>
+        </div>
+    </footer>
+
     <script>
+        // Function to display product tiles with image and details
         function displayProducts(products) {
             const productContainer = document.getElementById("product-container");
             productContainer.innerHTML = ""; // Clear existing content
@@ -140,9 +181,10 @@
             });
         }
 
+        // Replace this with your actual product data (image URL, title, price)
         const products = [
             { imageUrl: "image1.jpg", title: "Striped T-Shirt", price: 29.99 },
-            { imageUrl: "image2.jpg", title: "Floral Dress", price: 49.99},
+            { imageUrl: "image2.jpg", title: "Floral Dress", price: 49.99 },
             { imageUrl: "image3.jpg", title: "Denim Jacket", price: 79.99 },
             { imageUrl: "image4.jpg", title: "Stylish Sneakers", price: 59.99 },
             { imageUrl: "image5.jpg", title: "Cozy Hoodie", price: 39.99 },
